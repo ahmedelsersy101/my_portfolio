@@ -5,7 +5,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/portfolio/', // ✨ مهم جداً عند رفع المشروع على GitHub Pages
+  base: '/my_portfolio/', // ✨ مهم جداً عند رفع المشروع على GitHub Pages
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
