@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Download, ArrowRight } from "lucide-react";
 
 const Home = () => {
   const techStack = [
@@ -14,7 +14,10 @@ const Home = () => {
   ];
 
   return (
-    <section id="home" className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-28 pt-20 gap-12">
+    <section
+      id="home"
+      className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-28 pt-20 gap-12"
+    >
       {/* Left Content */}
       <div className="space-y-8 max-w-xl">
         {/* Availability Badge */}
@@ -36,7 +39,9 @@ const Home = () => {
         {/* Description */}
         <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
           <p>
-            I craft modern, scalable, and user-friendly mobile applications using Flutter. My focus is on delivering seamless user experiences and efficient solutions that help businesses grow.
+            I craft modern, scalable, and user-friendly mobile applications
+            using Flutter. My focus is on delivering seamless user experiences
+            and efficient solutions that help businesses grow.
           </p>
         </div>
 
@@ -50,31 +55,38 @@ const Home = () => {
                 className="flex items-center space-x-2 px-3 py-2 bg-gray-800 rounded-lg border border-gray-700"
               >
                 <div className={`w-3 h-3 rounded-full ${tech.color}`}></div>
-                <span className="text-gray-300 text-sm font-medium">{tech.name}</span>
+                <span className="text-gray-300 text-sm font-medium">
+                  {tech.name}
+                </span>
               </div>
             ))}
           </div>
         </div>
 
         {/* Action Buttons */}
-       <div className="flex flex-col sm:flex-row gap-4 pt-4">
-<Button
-  asChild
-  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-base font-medium flex items-center gap-2"
->
-  <a href="/AhmedelsersyCV.pdf" download>
-    <Download className="w-5 h-5" /> {/* أيقونة التحميل */}
-    Download CV
-  </a>
-</Button>
+        <div className="flex flex-col sm:flex-row gap-4 pt-4">
+          <Button
+            asChild
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-base font-medium flex items-center gap-2"
+          >
+            <a
+              href="https://drive.google.com/file/d/1kaouXSuogKuTwEslyGjATREOHen8GQ-8/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ArrowRight className="w-5 h-5" /> {/* أيقونة جديدة */}
+              View CV
+            </a>
+          </Button>
 
-  <Button asChild variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-6 py-3 text-base font-medium">
-    <a href="#contact">
-      Contact Me
-    </a>
-  </Button>
-</div>
-
+          <Button
+            asChild
+            variant="outline"
+            className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-6 py-3 text-base font-medium"
+          >
+            <a href="#contact">Contact Me</a>
+          </Button>
+        </div>
       </div>
 
       {/* Right Content - Profile Image */}
@@ -87,7 +99,11 @@ const Home = () => {
 
           {/* Profile Image Container */}
           <div className="relative w-64 sm:w-80 lg:w-96 h-64 sm:h-80 lg:h-96 rounded-full overflow-hidden border-4 border-gray-700 bg-gray-800">
-            <img src="me.png" alt="My Profile" className="w-full h-full object-cover" />
+            <img
+              src="me.png"
+              alt="My Profile"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Floating Code Icon */}
