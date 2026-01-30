@@ -1,48 +1,81 @@
-import { ExternalLink, Github } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { ExternalLink, Github } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Weekly – Task & productivity app',
-      description: 'Task & productivity app with week-based tracking.',
-      image: '/api/placeholder/400/250',
-      technologies: ['Flutter', 'Dart', 'Supabase','Notifications','Hive','Localization','Bolc-Cubit',"Responsive UI","Adaptive layouts"],
-      githubUrl: 'https://github.com/ahmedelsersy101/weekly_app',
-      liveUrl: 'https://ahmedelsersy101.github.io/weekly_live/',
-      gradient: 'from-purple-600 to-blue-600'
+      title: "Ghaith Elmuslim",
+      description:
+        "An Islamic app that provides Quran, prayers, supplications, and Qibla direction all in one place.",
+      image: "ghaith.jpg",
+      technologies: [
+        "Flutter",
+        "Dart",
+        "Notifications",
+        "Hive",
+        "Localization",
+        "Bolc-Cubit",
+        "Responsive UI",
+      ],
+      githubUrl: "https://github.com/ahmedelsersy101/ghaith_muslim",
+      liveUrl:
+        "https://play.google.com/store/apps/details?id=com.ghaith.muslim.app",
     },
     {
-      title: 'Ghaith Elmuslim',
-      description: 'An Islamic app that provides Quran, prayers, supplications, and Qibla direction all in one place.',
-      image: '/api/placeholder/400/250',
-      technologies: ['Flutter', 'Dart','Notifications','Hive','Localization','Bolc-Cubit',"Responsive UI"],
-      githubUrl: 'https://github.com/ahmedelsersy101/ghaith_muslim',
-      liveUrl: 'https://play.google.com/store/apps/details?id=com.ghaith.muslim.app',
-      gradient: 'from-gray-600 to-gray-800'
+      title: "Salaty - Professional Prayer Companion",
+      description:
+        "A high-performance Islamic companion app featuring precise prayer timing, background fetch notifications, and advanced Qibla compass.",
+      image: "salaty.png",
+      technologies: [
+        "Flutter",
+        "GetX",
+        "Adhan API",
+        "Background Fetch",
+        "Awesome Notifications",
+      ],
+      githubUrl: "https://github.com/ahmedelsersy101/salaty_app",
+      liveUrl: "#",
     },
     {
-      title: 'Eldemeshki Delivery',
-      description: 'Food delivery app with a smooth UI/UX.',
-      image: '/api/placeholder/400/250',
-      technologies: ['Flutter', 'Dart',],
-      githubUrl: '#',
-      liveUrl: '#',
-      gradient: 'from-cyan-500 to-blue-500'
+      title: "Weekly – Task & productivity app",
+      description: "Task & productivity app with week-based tracking.",
+      image: "weekly.png",
+      technologies: [
+        "Flutter",
+        "Dart",
+        "Supabase",
+        "Notifications",
+        "Hive",
+        "Localization",
+        "Bolc-Cubit",
+        "Responsive UI",
+      ],
+      githubUrl: "https://github.com/ahmedelsersy101/weekly_app",
+      liveUrl: "https://ahmedelsersy101.github.io/weekly_live/",
     },
     {
-      title: 'Programming App',
-      description: 'Learning platform for programming concepts.',
-      image: '/api/placeholder/400/250',
-      technologies: ['Flutter', 'Dart',],
-      githubUrl: '#',
-      liveUrl: '#',
-      gradient: 'from-indigo-600 to-purple-600'
-    }
+      title: "Masrofaty - Smart Finance Manager",
+      description:
+        "A sophisticated finance tracking app built with Clean Architecture and BLoC pattern. Features include multi-currency wallet management, real-time spending analytics, and PDF reports.",
+      image: "monay.png", // تأكد من وجود / في البداية
+      technologies: [
+        "Flutter",
+        "BLoC",
+        "Clean Architecture",
+        "Dio",
+        "FL Chart",
+        "Shared Prefs",
+      ],
+      githubUrl: "https://github.com/ahmedelsersy101/money_app",
+      liveUrl: "#",
+    },
   ];
 
   return (
-    <section id="projects" className="min-h-screen px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+    <section
+      id="projects"
+      className="min-h-screen px-4 sm:px-6 lg:px-8 pt-24 pb-16 bg-black"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -59,77 +92,88 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-900/50 border border-gray-800 rounded-xl overflow-hidden hover:border-gray-700 transition-all duration-300 group"
+              className="bg-gray-900/40 border border-gray-800 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-500 group"
             >
-              {/* Project Image */}
-              <div className="relative h-48 overflow-hidden">
-                <div className={`w-full h-full bg-gradient-to-br ${project.gradient} flex items-center justify-center`}>
-                  <div className="text-white text-6xl opacity-20">
-                    {project.title.includes('Weekly') && '🗓️'}
-                    {project.title.includes('Ghaith') && '📚'}
-                    {project.title.includes('Asers') && '💻'}
-                    {project.title.includes('Eldemeshki') && '🍔'}
-                  </div>
-                </div>
-                
-                {/* Overlay with links */}
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
+              {/* Project Image Area */}
+              <div className="relative h-64 sm:h-72 overflow-hidden bg-gray-800">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                   <Button
                     variant="outline"
-                    size="sm"
-                    className="border-white/20 text-white hover:bg-white/10"
+                    className="border-white/20 text-white hover:bg-white/10 backdrop-blur-md"
                     asChild
                   >
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github size={16} className="mr-2" />
-                      Code
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github size={18} className="mr-2" />
+                      Source Code
                     </a>
                   </Button>
-                  <Button
-                    size="sm"
-                    className="bg-blue-600 hover:bg-blue-700"
-                    asChild
-                  >
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink size={16} className="mr-2" />
-                      Live Demo
-                    </a>
-                  </Button>
+
+                  {project.liveUrl !== "#" && (
+                    <Button
+                      className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-900/20"
+                      asChild
+                    >
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink size={18} className="mr-2" />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
 
-              {/* Project Content */}
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                  <div className="flex space-x-2">
+              {/* Project Details Content */}
+              <div className="p-6 sm:p-8">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                    {project.title}
+                  </h3>
+                  <div className="flex gap-3">
                     <a
                       href={project.githubUrl}
+                      target="_blank"
                       className="text-gray-400 hover:text-white transition-colors"
-                      aria-label="GitHub"
                     >
-                      <Github size={20} />
+                      <Github size={22} />
                     </a>
-                    <a
-                      href={project.liveUrl}
-                      className="text-gray-400 hover:text-white transition-colors"
-                      aria-label="Live Demo"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
+                    {project.liveUrl !== "#" && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        className="text-gray-400 hover:text-white transition-colors"
+                      >
+                        <ExternalLink size={22} />
+                      </a>
+                    )}
                   </div>
                 </div>
 
-                <p className="text-gray-400 mb-4 leading-relaxed">
+                <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
                   {project.description}
                 </p>
 
-                {/* Technologies */}
+                {/* Technologies Badges */}
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-blue-600/20 text-blue-300 text-sm rounded-full border border-blue-600/30"
+                      className="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-medium rounded-md border border-blue-500/20"
                     >
                       {tech}
                     </span>
@@ -145,4 +189,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
