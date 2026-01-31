@@ -1,31 +1,43 @@
-import { useState } from 'react';
-import { Menu, X, Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useState } from "react";
+import { Menu, X, Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'certificates', label: 'Certificates' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'contact', label: 'Contact' },
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
+    { id: "experience", label: "Experience" },
+    { id: "skills", label: "Skills" },
+    { id: "certificates", label: "Certificates" },
+    { id: "contact", label: "Contact" },
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/ahmedelsersy101', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/ahmedelsersy11', label: 'LinkedIn' },
-    { icon: Mail, href: 'https://mail.google.com/mail/?view=cm&fs=1&to=ahmedelsersy101@gmail.com&su=Hello Ahmed&body=I would like to contact you', label: 'Email' },
-    { icon: X, href: 'https://x.com/ahmedalsersy10', label: 'UPwork' }
+    {
+      icon: Github,
+      href: "https://github.com/ahmedelsersy101",
+      label: "GitHub",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/ahmedelsersy11",
+      label: "LinkedIn",
+    },
+    {
+      icon: Mail,
+      href: "https://mail.google.com/mail/?view=cm&fs=1&to=ahmedelsersy101@gmail.com&su=Hello Ahmed&body=I would like to contact you",
+      label: "Email",
+    },
+    { icon: X, href: "https://x.com/ahmedalsersy10", label: "UPwork" },
   ];
 
   const handleScrollTo = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
     setIsMenuOpen(false);
   };
@@ -36,7 +48,10 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-white cursor-pointer" onClick={() => handleScrollTo('home')}>
+            <h1
+              className="text-xl font-bold text-white cursor-pointer"
+              onClick={() => handleScrollTo("home")}
+            >
               Ahmedelsersy
             </h1>
           </div>
