@@ -25,7 +25,7 @@ const Projects = () => {
       title: "Salaty - Professional Prayer Companion",
       description:
         "A high-performance Islamic companion app featuring precise prayer timing, background fetch notifications, and advanced Qibla compass.",
-      image: "salaty.png",
+      image: "salaty.jpg",
       technologies: [
         "Flutter",
         "GetX",
@@ -39,7 +39,7 @@ const Projects = () => {
     {
       title: "Weekly – Task & productivity app",
       description: "Task & productivity app with week-based tracking.",
-      image: "weekly.png",
+      image: "weekly.jpg",
       technologies: [
         "Flutter",
         "Dart",
@@ -57,7 +57,7 @@ const Projects = () => {
       title: "Masrofaty - Smart Finance Manager",
       description:
         "A sophisticated finance tracking app built with Clean Architecture and BLoC pattern. Features include multi-currency wallet management, real-time spending analytics, and PDF reports.",
-      image: "monay.png", // تأكد من وجود / في البداية
+      image: "monay.jpg", // تأكد من وجود / في البداية
       technologies: [
         "Flutter",
         "BLoC",

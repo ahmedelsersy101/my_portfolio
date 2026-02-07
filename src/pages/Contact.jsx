@@ -45,43 +45,46 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/Ahmedsersy10",
-      color: "hover:text-gray-300"
+      href: "https://github.com/Ahmedelsersy101",
+      color: "hover:text-gray-300",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/ahmedelsersy11",
-      color: "hover:text-blue-400"
+      color: "hover:text-blue-400",
     },
     {
       icon: Facebook,
       label: "Facebook",
       href: "https://www.facebook.com/AhMedAlsErSy10",
-      color: "hover:text-blue-600"
+      color: "hover:text-blue-600",
     },
     {
       icon: Instagram,
       label: "Instagram",
       href: "https://www.instagram.com/ahmedelsersy10/",
-      color: "hover:text-pink-400"
+      color: "hover:text-pink-400",
     },
     {
       icon: MessageCircle,
       label: "WhatsApp",
       href: "https://wa.me/qr/E7KX4XV5NJJAI1",
-      color: "hover:text-green-400"
+      color: "hover:text-green-400",
     },
     {
       icon: MessageCircle,
       label: "Telegram",
       href: "https://t.me/ahmedelsersy10",
-      color: "hover:text-blue-500"
+      color: "hover:text-blue-500",
     },
   ];
 
   return (
-    <section id="contact" className="min-h-screen px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+    <section
+      id="contact"
+      className="min-h-screen px-4 sm:px-6 lg:px-8 pt-24 pb-16"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -202,10 +205,12 @@ const Contact = () => {
             asChild
           >
             <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedelsersy101@gmail.com&su=Hello Ahmed&body=I would like to contact you"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >Start Conversation</a>
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedelsersy101@gmail.com&su=Hello Ahmed&body=I would like to contact you"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Start Conversation
+            </a>
           </Button>
         </div>
       </div>
