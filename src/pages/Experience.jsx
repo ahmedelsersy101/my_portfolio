@@ -3,6 +3,18 @@ import { Briefcase, GraduationCap, MapPin, Calendar } from "lucide-react";
 const Experience = () => {
   const workExperience = [
     {
+      title: "Flutter Developer Intern",
+      company: "Pioneers Solutions",
+      location: "Menoufia, Egypt (Hybrid)",
+      period: "April 2026 - Present",
+      description: [
+        "Participating in real-world Flutter application development within a professional team environment",
+        "Applying Clean Architecture principles and state management using Cubit and Bloc",
+        "Collaborating with team members on feature implementation and code improvements",
+        "Gaining hands-on experience in scalable app development and best coding practices",
+      ],
+    },
+    {
       title: "Flutter Developer",
       company: "Freelance (Upwork & Freelance)",
       location: "Remote",
@@ -21,9 +33,9 @@ const Experience = () => {
       degree: "Self-Taught Software Developer",
       institution: "Independent Learning",
       location: "Remote / Online",
-      period: "2020 - Present",
+      period: "2022 - Present",
       description:
-        "Over 3 years of dedicated self-learning in mobile and web development. Gained practical experience building Flutter applications, responsive web apps, and integrating APIs. Skilled in modern frameworks, front-end technologies, and creating scalable, high-performance solutions.",
+        "Over 4 years of dedicated self-learning in mobile and web development. Gained practical experience building Flutter applications, responsive web apps, and integrating APIs. Skilled in modern frameworks, front-end technologies, and creating scalable, high-performance solutions.",
     },
   ];
 

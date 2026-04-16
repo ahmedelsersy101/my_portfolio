@@ -21,21 +21,21 @@ const Projects = () => {
       liveUrl:
         "https://play.google.com/store/apps/details?id=com.ghaith.muslim.app",
     },
-    {
-      title: "Salaty - Professional Prayer Companion",
-      description:
-        "A high-performance Islamic companion app featuring precise prayer timing, background fetch notifications, and advanced Qibla compass.",
-      image: "salaty.jpg",
-      technologies: [
-        "Flutter",
-        "GetX",
-        "Adhan API",
-        "Background Fetch",
-        "Awesome Notifications",
-      ],
-      githubUrl: "https://github.com/ahmedelsersy101/salaty_app",
-      liveUrl: "#",
-    },
+    // {
+    //   title: "Salaty - Professional Prayer Companion",
+    //   description:
+    //     "A high-performance Islamic companion app featuring precise prayer timing, background fetch notifications, and advanced Qibla compass.",
+    //   image: "salaty.jpg",
+    //   technologies: [
+    //     "Flutter",
+    //     "GetX",
+    //     "Adhan API",
+    //     "Background Fetch",
+    //     "Awesome Notifications",
+    //   ],
+    //   githubUrl: "https://github.com/ahmedelsersy101/salaty_app",
+    //   liveUrl: "#",
+    // },
     {
       title: "Weekly – Task & productivity app",
       description: "Task & productivity app with week-based tracking.",

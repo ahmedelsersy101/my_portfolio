@@ -70,7 +70,7 @@ const Home = () => {
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-base font-medium flex items-center gap-2"
           >
             <a
-              href="https://drive.google.com/file/d/1kaouXSuogKuTwEslyGjATREOHen8GQ-8/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1llPyGK9NUSlOj0RxXVOj508AY_PfEyHh/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
             >
